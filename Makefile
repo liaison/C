@@ -1,6 +1,8 @@
 
-CC=gcc 
-CFLAGS=-Wall -O2 -m32
+CC=gcc
+
+# the assembly code in bit-pos-asm.c only works for IA32 arch. 
+CFLAGS=-Wall -O2 -m32 -g
 
 
 all: bit-pos-loop bit-pos-asm 
